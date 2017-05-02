@@ -4,14 +4,14 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 S_SRCS += \
-D:/git_workspace/04.USART/SW4STM32/startup_stm32l476xx.s 
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/SW4STM32/startup_stm32l476xx.s 
 
 OBJS += \
 ./Application/SW4STM32/startup_stm32l476xx.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Application/SW4STM32/startup_stm32l476xx.o: D:/git_workspace/04.USART/SW4STM32/startup_stm32l476xx.s
+Application/SW4STM32/startup_stm32l476xx.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/SW4STM32/startup_stm32l476xx.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Assembler'
 	@echo %cd%

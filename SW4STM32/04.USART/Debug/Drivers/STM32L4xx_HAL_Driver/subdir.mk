@@ -4,23 +4,23 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c \
-D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c 
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c \
+C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c 
 
 OBJS += \
 ./Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal.o \
@@ -62,139 +62,139 @@ C_DEPS += \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_cortex.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_cortex.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_dma.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_dma.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_flash.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_flash.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_flash_ex.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_flash_ex.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_flash_ramfunc.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_flash_ramfunc.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_gpio.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_gpio.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c_ex.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c_ex.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim_ex.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim_ex.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart_ex.o: D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
+Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart_ex.o: C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo %cd%
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"D:/git_workspace/04.USART/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc" -I"D:/git_workspace/04.USART/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"D:/git_workspace/04.USART/Drivers/CMSIS/Include" -I"D:/git_workspace/04.USART/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Drivers/CMSIS/Include" -I"C:/Users/Frozen/Documents/GitHub/Platforma_Stewarta/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
